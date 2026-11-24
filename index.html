@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battery Power Indicator</title>
+  <meta name="description" content="Tray indicator of laptop battery charge and discharge power for Windows.">
+  <link rel="icon" href="assets/icon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon-256.png">
+  <meta property="og:title" content="Battery Power Indicator">
+  <meta property="og:description" content="Laptop battery power in the Windows tray.">
+  <meta property="og:image" content="assets/icon-256.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="assets/icon-256.png" width="48" height="48" alt="">
+    <a class="title" href="index.html">Battery Power Indicator</a>
+    <nav class="langs" aria-label="Language">
+      <button type="button" data-set-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-set-lang="uk" aria-pressed="false">UK</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <p class="hero-watt"><span class="plus">+</span>12.4 <span class="unit">W</span></p>
+    <h1 data-i18n
+        data-ru="Мощность батареи на значке в трее Windows"
+        data-uk="Потужність батареї на значку в системному лотку Windows"
+        data-en="Laptop battery power on the Windows tray icon">Мощность батареи на значке в трее Windows</h1>
+    <p class="muted" data-i18n
+       data-ru="Свободная утилита: сколько ватт идёт в батарею или из неё. Подробности — по клику. Данные читает Windows API, без фоновых служб и телеметрии."
+       data-uk="Вільна утиліта: скільки ват іде в батарею або з неї. Подробиці — за кліком. Дані читає Windows API, без фонових служб і телеметрії."
+       data-en="A free utility: how many watts flow into or out of the battery. Details on click. It reads Windows APIs only — no background services and no telemetry.">Свободная утилита: сколько ватт идёт в батарею или из неё. Подробности — по клику. Данные читает Windows API, без фоновых служб и телеметрии.</p>
+
+    <div class="card">
+      <ul>
+        <li data-i18n
+            data-ru="Значок в области уведомлений: число ватт, зелёный при заряде, оранжевый при разряде."
+            data-uk="Значок в області сповіщень: число ват, зелений під час заряду, помаранчевий під час розряду."
+            data-en="Notification-area icon: watt value, green while charging, orange while discharging.">Значок в области уведомлений: число ватт, зелёный при заряде, оранжевый при разряде.</li>
+        <li data-i18n
+            data-ru="Окно подробностей: ёмкость, напряжение, ток, износ, циклы, температура — если драйвер их отдаёт."
+            data-uk="Вікно подробиць: ємність, напруга, струм, знос, цикли, температура — якщо драйвер їх віддає."
+            data-en="Details window: capacity, voltage, current, wear, cycles, temperature — when the driver reports them.">Окно подробностей: ёмкость, напряжение, ток, износ, циклы, температура — если драйвер их отдаёт.</li>
+        <li data-i18n
+            data-ru="Русский, украинский и английский. Windows 10 и 11 в Microsoft Store; классический exe — Windows 7 SP1 и новее."
+            data-uk="Російська, українська та англійська. Windows 10 і 11 у Microsoft Store; класичний exe — Windows 7 SP1 і новіше."
+            data-en="Russian, Ukrainian, and English. Windows 10 and 11 from Microsoft Store; the classic exe still runs on Windows 7 SP1 and later.">Русский, украинский и английский. Windows 10 и 11 в Microsoft Store; классический exe — Windows 7 SP1 и новее.</li>
+      </ul>
+    </div>
+
+    <div class="actions">
+      <span class="btn primary" data-i18n
+            data-ru="Microsoft Store — скоро"
+            data-uk="Microsoft Store — незабаром"
+            data-en="Microsoft Store — coming soon">Microsoft Store — скоро</span>
+      <a class="btn ghost" href="privacy.html" data-i18n
+         data-ru="Политика конфиденциальности"
+         data-uk="Політика конфіденційності"
+         data-en="Privacy policy">Политика конфиденциальности</a>
+    </div>
+
+    <p class="muted" data-i18n
+       data-ru="Публично программа распространяется только через Microsoft Store. Этот сайт не отдаёт установочные файлы."
+       data-uk="Прилюдно програма поширюється лише через Microsoft Store. Цей сайт не віддає інсталяційні файли."
+       data-en="The public release is Microsoft Store only. This site does not host installers.">Публично программа распространяется только через Microsoft Store. Этот сайт не отдаёт установочные файлы.</p>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="privacy.html" data-i18n data-ru="Конфиденциальность" data-uk="Конфіденційність" data-en="Privacy">Конфиденциальность</a>
+      <a href="https://github.com/ivan-ryzhenko/batpowerindicator/issues" data-i18n data-ru="Поддержка" data-uk="Підтримка" data-en="Support">Поддержка</a>
+    </nav>
+    <p data-i18n
+       data-ru="Издатель — ФОП (Украина). Юридическое имя — на странице продукта в Microsoft Store."
+       data-uk="Видавець — ФОП (Україна). Юридичне ім’я — на сторінці продукту в Microsoft Store."
+       data-en="Publisher: a sole proprietor in Ukraine. The legal name appears on the Microsoft Store product page.">Издатель — ФОП (Украина). Юридическое имя — на странице продукта в Microsoft Store.</p>
+  </footer>
+  <script src="lang.js"></script>
+</body>
+</html>
